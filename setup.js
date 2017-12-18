@@ -9,9 +9,7 @@ const DIR = path.join(os.tmpdir(), 'jest_puppeteer_global_setup')
 
 module.exports = async function() {
   console.log(chalk.green('Setup Puppeteer Environment.'))
-  const browser = await puppeteer.launch({
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-  })
+  const browser = await puppeteer.launch({})
   global.__BROWSER__ = browser
   mkdirp.sync(DIR)
   fs.writeFileSync(path.join(DIR, 'wsEndpoint'), browser.wsEndpoint())
