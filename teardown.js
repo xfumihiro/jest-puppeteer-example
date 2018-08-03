@@ -1,5 +1,4 @@
 const chalk = require('chalk')
-const puppeteer = require('puppeteer')
 const rimraf = require('rimraf')
 const os = require('os')
 const path = require('path')
