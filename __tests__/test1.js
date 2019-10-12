@@ -1,7 +1,8 @@
 const timeout = 5000
 
+// Our docs https://jestjs.io/docs/en/puppeteer
 
-let array = ['medvedevdenis12@gmail.com', 'https://jestjs.io/docs/en/puppeteer']
+let array = ['medvedevdenis12@gmail.com', 'medvedevdenis12@gmail.com']
 
 describe(
   '/ (Home Page)',
